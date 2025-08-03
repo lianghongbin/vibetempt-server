@@ -4,14 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8367daee-5c84-47dd-87d2-8ba9e57c926c" name="Changes" comment="" />
+    <list default="true" id="8367daee-5c84-47dd-87d2-8ba9e57c926c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/logs/sys-error.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/sys-info.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/sys-user.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ruoyi-admin/logs/sys-error.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ruoyi-admin/logs/sys-info.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ruoyi-admin/logs/sys-user.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ruoyi-admin/src/main/resources/README-ENV.md" beforeDir="false" afterPath="$PROJECT_DIR$/ruoyi-admin/src/main/resources/README-ENV.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ruoyi-admin/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ruoyi-admin/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ruoyi-admin/src/main/resources/application-druid.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ruoyi-admin/src/main/resources/application-prod.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ruoyi-admin/src/main/resources/application-prod.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ruoyi-admin/src/main/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ruoyi-admin/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ruoyi-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ruoyi-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ruoyi-vibtempt/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ruoyi-vibtempt/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ry.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ry.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/quartz.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/ry_20250522.sql" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/RuoYi-Vue" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 1
@@ -24,6 +43,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Maven.vibetempt-server [clean].executor": "Run",
+    "Maven.vibetempt-server [install].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
@@ -31,7 +52,7 @@
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Spring Boot.RuoYiApplication.executor": "Run",
-    "git-widget-placeholder": "springboot3",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "/Users/eric.liang/CursorProjects/vibetempt-server",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -43,6 +64,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ruoyi-vibtempt/src/main/java" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="RuoYiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
@@ -68,7 +94,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1754181421607</updated>
-      <workItem from="1754181422694" duration="2138000" />
+      <workItem from="1754181422694" duration="6947000" />
     </task>
     <servers />
   </component>

@@ -9,9 +9,11 @@
         <version>3.9.0</version>
     </parent>
     <artifactId>ruoyi-vibtempt</artifactId>
-    <properties>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.ruoyi</groupId>
+            <artifactId>ruoyi-common</artifactId>
+        </dependency>
+    </dependencies>
 </project>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.system.mapper.AiUserCharacterRelationMapper">
+    
+    <resultMap type="AiUserCharacterRelation" id="AiUserCharacterRelationResult">
+        <result property="id"    column="id"    />
+        <result property="userId"    column="user_id"    />
+        <result property="characterId"    column="character_id"    />
+        <result property="relationshipLevel"    column="relationship_level"    />
+        <result property="emotionalState"    column="emotional_state"    />
+        <result property="trustLevel"    column="trust_level"    />
+        <result property="totalInteractions"    column="total_interactions"    />
+        <result property="totalMessages"    column="total_messages"    />
+        <result property="firstInteractionTime"    column="first_interaction_time"    />
+        <result property="lastInteractionTime"    column="last_interaction_time"    />
+        <result property="createTime"    column="create_time"    />
+        <result property="updateTime"    column="update_time"    />
+        <result property="createBy"    column="create_by"    />
+        <result property="updateBy"    column="update_by"    />
+        <result property="delFlag"    column="del_flag"    />
+    </resultMap>
+
+    <sql id="selectAiUserCharacterRelationVo">
+        select id, user_id, character_id, relationship_level, emotional_state, trust_level, total_interactions, total_messages, first_interaction_time, last_interaction_time, create_time, update_time, create_by, update_by, del_flag from ai_user_character_relation
+    </sql>
+
+    <select id="selectAiUserCharacterRelationList" parameterType="AiUserCharacterRelation" resultMap="AiUserCharacterRelationResult">
+        <include refid="selectAiUserCharacterRelationVo"/>
+        <where>  
+            <if test="userId != null "> and user_id = #{userId}</if>
+            <if test="characterId != null "> and character_id = #{characterId}</if>
+            <if test="relationshipLevel != null "> and relationship_level = #{relationshipLevel}</if>
+            <if test="emotionalState != null  and emotionalState != ''"> and emotional_state = #{emotionalState}</if>
+            <if test="trustLevel != null "> and trust_level = #{trustLevel}</if>
+            <if test="totalInteractions != null "> and total_interactions = #{totalInteractions}</if>
+            <if test="totalMessages != null "> and total_messages = #{totalMessages}</if>
+            <if test="firstInteractionTime != null "> and first_interaction_time = #{firstInteractionTime}</if>
+            <if test="lastInteractionTime != null "> and last_interaction_time = #{lastInteractionTime}</if>
+        </where>
+    </select>
+    
+    <select id="selectAiUserCharacterRelationById" parameterType="Long" resultMap="AiUserCharacterRelationResult">
+        <include refid="selectAiUserCharacterRelationVo"/>
+        where id = #{id}
+    </select>
+
+    <insert id="insertAiUserCharacterRelation" parameterType="AiUserCharacterRelation" useGeneratedKeys="true" keyProperty="id">
+        insert into ai_user_character_relation
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="userId != null">user_id,</if>
+            <if test="characterId != null">character_id,</if>
+            <if test="relationshipLevel != null">relationship_level,</if>
+            <if test="emotionalState != null">emotional_state,</if>
+            <if test="trustLevel != null">trust_level,</if>
+            <if test="totalInteractions != null">total_interactions,</if>
+            <if test="totalMessages != null">total_messages,</if>
+            <if test="firstInteractionTime != null">first_interaction_time,</if>
+            <if test="lastInteractionTime != null">last_interaction_time,</if>
+            <if test="createTime != null">create_time,</if>
+            <if test="updateTime != null">update_time,</if>
+            <if test="createBy != null">create_by,</if>
+            <if test="updateBy != null">update_by,</if>
+            <if test="delFlag != null">del_flag,</if>
+         </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="userId != null">#{userId},</if>
+            <if test="characterId != null">#{characterId},</if>
+            <if test="relationshipLevel != null">#{relationshipLevel},</if>
+            <if test="emotionalState != null">#{emotionalState},</if>
+            <if test="trustLevel != null">#{trustLevel},</if>
+            <if test="totalInteractions != null">#{totalInteractions},</if>
+            <if test="totalMessages != null">#{totalMessages},</if>
+            <if test="firstInteractionTime != null">#{firstInteractionTime},</if>
+            <if test="lastInteractionTime != null">#{lastInteractionTime},</if>
+            <if test="createTime != null">#{createTime},</if>
+            <if test="updateTime != null">#{updateTime},</if>
+            <if test="createBy != null">#{createBy},</if>
+            <if test="updateBy != null">#{updateBy},</if>
+            <if test="delFlag != null">#{delFlag},</if>
+         </trim>
+    </insert>
+
+    <update id="updateAiUserCharacterRelation" parameterType="AiUserCharacterRelation">
+        update ai_user_character_relation
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="userId != null">user_id = #{userId},</if>
+            <if test="characterId != null">character_id = #{characterId},</if>
+            <if test="relationshipLevel != null">relationship_level = #{relationshipLevel},</if>
+            <if test="emotionalState != null">emotional_state = #{emotionalState},</if>
+            <if test="trustLevel != null">trust_level = #{trustLevel},</if>
+            <if test="totalInteractions != null">total_interactions = #{totalInteractions},</if>
+            <if test="totalMessages != null">total_messages = #{totalMessages},</if>
+            <if test="firstInteractionTime != null">first_interaction_time = #{firstInteractionTime},</if>
+            <if test="lastInteractionTime != null">last_interaction_time = #{lastInteractionTime},</if>
+            <if test="createTime != null">create_time = #{createTime},</if>
+            <if test="updateTime != null">update_time = #{updateTime},</if>
+            <if test="createBy != null">create_by = #{createBy},</if>
+            <if test="updateBy != null">update_by = #{updateBy},</if>
+            <if test="delFlag != null">del_flag = #{delFlag},</if>
+        </trim>
+        where id = #{id}
+    </update>
+
+    <delete id="deleteAiUserCharacterRelationById" parameterType="Long">
+        delete from ai_user_character_relation where id = #{id}
+    </delete>
+
+    <delete id="deleteAiUserCharacterRelationByIds" parameterType="String">
+        delete from ai_user_character_relation where id in 
+        <foreach item="id" collection="array" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+</mapper>

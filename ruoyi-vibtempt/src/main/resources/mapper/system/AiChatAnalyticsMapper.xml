@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.system.mapper.AiChatAnalyticsMapper">
+    
+    <resultMap type="AiChatAnalytics" id="AiChatAnalyticsResult">
+        <result property="id"    column="id"    />
+        <result property="userId"    column="user_id"    />
+        <result property="characterId"    column="character_id"    />
+        <result property="date"    column="date"    />
+        <result property="messageCount"    column="message_count"    />
+        <result property="conversationCount"    column="conversation_count"    />
+        <result property="totalDuration"    column="total_duration"    />
+        <result property="tokensUsed"    column="tokens_used"    />
+        <result property="averageSentiment"    column="average_sentiment"    />
+        <result property="dominantEmotion"    column="dominant_emotion"    />
+        <result property="createTime"    column="create_time"    />
+        <result property="updateTime"    column="update_time"    />
+        <result property="createBy"    column="create_by"    />
+        <result property="updateBy"    column="update_by"    />
+        <result property="delFlag"    column="del_flag"    />
+    </resultMap>
+
+    <sql id="selectAiChatAnalyticsVo">
+        select id, user_id, character_id, date, message_count, conversation_count, total_duration, tokens_used, average_sentiment, dominant_emotion, create_time, update_time, create_by, update_by, del_flag from ai_chat_analytics
+    </sql>
+
+    <select id="selectAiChatAnalyticsList" parameterType="AiChatAnalytics" resultMap="AiChatAnalyticsResult">
+        <include refid="selectAiChatAnalyticsVo"/>
+        <where>  
+            <if test="userId != null "> and user_id = #{userId}</if>
+            <if test="characterId != null "> and character_id = #{characterId}</if>
+            <if test="date != null "> and date = #{date}</if>
+            <if test="messageCount != null "> and message_count = #{messageCount}</if>
+            <if test="conversationCount != null "> and conversation_count = #{conversationCount}</if>
+            <if test="totalDuration != null "> and total_duration = #{totalDuration}</if>
+            <if test="tokensUsed != null "> and tokens_used = #{tokensUsed}</if>
+            <if test="averageSentiment != null "> and average_sentiment = #{averageSentiment}</if>
+            <if test="dominantEmotion != null  and dominantEmotion != ''"> and dominant_emotion = #{dominantEmotion}</if>
+        </where>
+    </select>
+    
+    <select id="selectAiChatAnalyticsById" parameterType="Long" resultMap="AiChatAnalyticsResult">
+        <include refid="selectAiChatAnalyticsVo"/>
+        where id = #{id}
+    </select>
+
+    <insert id="insertAiChatAnalytics" parameterType="AiChatAnalytics" useGeneratedKeys="true" keyProperty="id">
+        insert into ai_chat_analytics
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="userId != null">user_id,</if>
+            <if test="characterId != null">character_id,</if>
+            <if test="date != null">date,</if>
+            <if test="messageCount != null">message_count,</if>
+            <if test="conversationCount != null">conversation_count,</if>
+            <if test="totalDuration != null">total_duration,</if>
+            <if test="tokensUsed != null">tokens_used,</if>
+            <if test="averageSentiment != null">average_sentiment,</if>
+            <if test="dominantEmotion != null">dominant_emotion,</if>
+            <if test="createTime != null">create_time,</if>
+            <if test="updateTime != null">update_time,</if>
+            <if test="createBy != null">create_by,</if>
+            <if test="updateBy != null">update_by,</if>
+            <if test="delFlag != null">del_flag,</if>
+         </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="userId != null">#{userId},</if>
+            <if test="characterId != null">#{characterId},</if>
+            <if test="date != null">#{date},</if>
+            <if test="messageCount != null">#{messageCount},</if>
+            <if test="conversationCount != null">#{conversationCount},</if>
+            <if test="totalDuration != null">#{totalDuration},</if>
+            <if test="tokensUsed != null">#{tokensUsed},</if>
+            <if test="averageSentiment != null">#{averageSentiment},</if>
+            <if test="dominantEmotion != null">#{dominantEmotion},</if>
+            <if test="createTime != null">#{createTime},</if>
+            <if test="updateTime != null">#{updateTime},</if>
+            <if test="createBy != null">#{createBy},</if>
+            <if test="updateBy != null">#{updateBy},</if>
+            <if test="delFlag != null">#{delFlag},</if>
+         </trim>
+    </insert>
+
+    <update id="updateAiChatAnalytics" parameterType="AiChatAnalytics">
+        update ai_chat_analytics
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="userId != null">user_id = #{userId},</if>
+            <if test="characterId != null">character_id = #{characterId},</if>
+            <if test="date != null">date = #{date},</if>
+            <if test="messageCount != null">message_count = #{messageCount},</if>
+            <if test="conversationCount != null">conversation_count = #{conversationCount},</if>
+            <if test="totalDuration != null">total_duration = #{totalDuration},</if>
+            <if test="tokensUsed != null">tokens_used = #{tokensUsed},</if>
+            <if test="averageSentiment != null">average_sentiment = #{averageSentiment},</if>
+            <if test="dominantEmotion != null">dominant_emotion = #{dominantEmotion},</if>
+            <if test="createTime != null">create_time = #{createTime},</if>
+            <if test="updateTime != null">update_time = #{updateTime},</if>
+            <if test="createBy != null">create_by = #{createBy},</if>
+            <if test="updateBy != null">update_by = #{updateBy},</if>
+            <if test="delFlag != null">del_flag = #{delFlag},</if>
+        </trim>
+        where id = #{id}
+    </update>
+
+    <delete id="deleteAiChatAnalyticsById" parameterType="Long">
+        delete from ai_chat_analytics where id = #{id}
+    </delete>
+
+    <delete id="deleteAiChatAnalyticsByIds" parameterType="String">
+        delete from ai_chat_analytics where id in 
+        <foreach item="id" collection="array" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+</mapper>

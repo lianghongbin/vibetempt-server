@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.system.mapper.AiChatSessionMapper">
+    
+    <resultMap type="AiChatSession" id="AiChatSessionResult">
+        <result property="id"    column="id"    />
+        <result property="userId"    column="user_id"    />
+        <result property="characterId"    column="character_id"    />
+        <result property="isActive"    column="is_active"    />
+        <result property="currentConversationId"    column="current_conversation_id"    />
+        <result property="contextData"    column="context_data"    />
+        <result property="createTime"    column="create_time"    />
+        <result property="updateTime"    column="update_time"    />
+        <result property="createBy"    column="create_by"    />
+        <result property="updateBy"    column="update_by"    />
+        <result property="delFlag"    column="del_flag"    />
+    </resultMap>
+
+    <sql id="selectAiChatSessionVo">
+        select id, user_id, character_id, is_active, current_conversation_id, context_data, create_time, update_time, create_by, update_by, del_flag from ai_chat_session
+    </sql>
+
+    <select id="selectAiChatSessionList" parameterType="AiChatSession" resultMap="AiChatSessionResult">
+        <include refid="selectAiChatSessionVo"/>
+        <where>  
+            <if test="userId != null "> and user_id = #{userId}</if>
+            <if test="characterId != null "> and character_id = #{characterId}</if>
+            <if test="isActive != null "> and is_active = #{isActive}</if>
+            <if test="currentConversationId != null "> and current_conversation_id = #{currentConversationId}</if>
+            <if test="contextData != null  and contextData != ''"> and context_data = #{contextData}</if>
+        </where>
+    </select>
+    
+    <select id="selectAiChatSessionById" parameterType="Long" resultMap="AiChatSessionResult">
+        <include refid="selectAiChatSessionVo"/>
+        where id = #{id}
+    </select>
+
+    <insert id="insertAiChatSession" parameterType="AiChatSession" useGeneratedKeys="true" keyProperty="id">
+        insert into ai_chat_session
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="userId != null">user_id,</if>
+            <if test="characterId != null">character_id,</if>
+            <if test="isActive != null">is_active,</if>
+            <if test="currentConversationId != null">current_conversation_id,</if>
+            <if test="contextData != null">context_data,</if>
+            <if test="createTime != null">create_time,</if>
+            <if test="updateTime != null">update_time,</if>
+            <if test="createBy != null">create_by,</if>
+            <if test="updateBy != null">update_by,</if>
+            <if test="delFlag != null">del_flag,</if>
+         </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="userId != null">#{userId},</if>
+            <if test="characterId != null">#{characterId},</if>
+            <if test="isActive != null">#{isActive},</if>
+            <if test="currentConversationId != null">#{currentConversationId},</if>
+            <if test="contextData != null">#{contextData},</if>
+            <if test="createTime != null">#{createTime},</if>
+            <if test="updateTime != null">#{updateTime},</if>
+            <if test="createBy != null">#{createBy},</if>
+            <if test="updateBy != null">#{updateBy},</if>
+            <if test="delFlag != null">#{delFlag},</if>
+         </trim>
+    </insert>
+
+    <update id="updateAiChatSession" parameterType="AiChatSession">
+        update ai_chat_session
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="userId != null">user_id = #{userId},</if>
+            <if test="characterId != null">character_id = #{characterId},</if>
+            <if test="isActive != null">is_active = #{isActive},</if>
+            <if test="currentConversationId != null">current_conversation_id = #{currentConversationId},</if>
+            <if test="contextData != null">context_data = #{contextData},</if>
+            <if test="createTime != null">create_time = #{createTime},</if>
+            <if test="updateTime != null">update_time = #{updateTime},</if>
+            <if test="createBy != null">create_by = #{createBy},</if>
+            <if test="updateBy != null">update_by = #{updateBy},</if>
+            <if test="delFlag != null">del_flag = #{delFlag},</if>
+        </trim>
+        where id = #{id}
+    </update>
+
+    <delete id="deleteAiChatSessionById" parameterType="Long">
+        delete from ai_chat_session where id = #{id}
+    </delete>
+
+    <delete id="deleteAiChatSessionByIds" parameterType="String">
+        delete from ai_chat_session where id in 
+        <foreach item="id" collection="array" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+</mapper>
