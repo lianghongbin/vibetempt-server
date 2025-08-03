@@ -26,6 +26,8 @@ replay_pid*
 # Maven
 target/
 pom.xml.tag
+# 忽略所有 target 目录
+**/target/
 pom.xml.releaseBackup
 pom.xml.versionsBackup
 pom.xml.next
