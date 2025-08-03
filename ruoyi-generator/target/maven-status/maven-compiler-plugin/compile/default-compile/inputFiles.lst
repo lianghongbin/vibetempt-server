@@ -1,0 +1,13 @@
+/Users/eric.liang/CursorProjects/vibetempt-server/ruoyi-generator/src/main/java/com/ruoyi/generator/config/GenConfig.java
+/Users/eric.liang/CursorProjects/vibetempt-server/ruoyi-generator/src/main/java/com/ruoyi/generator/controller/GenController.java
+/Users/eric.liang/CursorProjects/vibetempt-server/ruoyi-generator/src/main/java/com/ruoyi/generator/domain/GenTable.java
+/Users/eric.liang/CursorProjects/vibetempt-server/ruoyi-generator/src/main/java/com/ruoyi/generator/domain/GenTableColumn.java
+/Users/eric.liang/CursorProjects/vibetempt-server/ruoyi-generator/src/main/java/com/ruoyi/generator/mapper/GenTableColumnMapper.java
+/Users/eric.liang/CursorProjects/vibetempt-server/ruoyi-generator/src/main/java/com/ruoyi/generator/mapper/GenTableMapper.java
+/Users/eric.liang/CursorProjects/vibetempt-server/ruoyi-generator/src/main/java/com/ruoyi/generator/service/GenTableColumnServiceImpl.java
+/Users/eric.liang/CursorProjects/vibetempt-server/ruoyi-generator/src/main/java/com/ruoyi/generator/service/GenTableServiceImpl.java
+/Users/eric.liang/CursorProjects/vibetempt-server/ruoyi-generator/src/main/java/com/ruoyi/generator/service/IGenTableColumnService.java
+/Users/eric.liang/CursorProjects/vibetempt-server/ruoyi-generator/src/main/java/com/ruoyi/generator/service/IGenTableService.java
+/Users/eric.liang/CursorProjects/vibetempt-server/ruoyi-generator/src/main/java/com/ruoyi/generator/util/GenUtils.java
+/Users/eric.liang/CursorProjects/vibetempt-server/ruoyi-generator/src/main/java/com/ruoyi/generator/util/VelocityInitializer.java
+/Users/eric.liang/CursorProjects/vibetempt-server/ruoyi-generator/src/main/java/com/ruoyi/generator/util/VelocityUtils.java
