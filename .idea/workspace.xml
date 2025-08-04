@@ -5,36 +5,70 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8367daee-5c84-47dd-87d2-8ba9e57c926c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/logs/sys-error.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/sys-info.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/sys-user.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ruoyi-admin/logs/sys-error.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ruoyi-admin/logs/sys-info.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ruoyi-admin/logs/sys-user.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ruoyi-admin/src/main/resources/README-ENV.md" beforeDir="false" afterPath="$PROJECT_DIR$/ruoyi-admin/src/main/resources/README-ENV.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ruoyi-admin/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ruoyi-admin/src/main/resources/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ruoyi-admin/src/main/resources/application-druid.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ruoyi-admin/src/main/resources/application-prod.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ruoyi-admin/src/main/resources/application-prod.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ruoyi-admin/src/main/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ruoyi-admin/src/main/resources/logback-spring.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ruoyi-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ruoyi-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ruoyi-vibtempt/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ruoyi-vibtempt/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ry.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ry.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/quartz.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/ry_20250522.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ruoyi-admin/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ruoyi-admin/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ruoyi-vibtempt/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ruoyi-vibetempt/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ruoyi-vibtempt/src/main/java/com/ruoyi/system/controller/AiCharacterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ruoyi-vibetempt/src/main/java/com/ruoyi/system/controller/AiCharacterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ruoyi-vibtempt/src/main/java/com/ruoyi/system/controller/AiCharacterMemoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ruoyi-vibetempt/src/main/java/com/ruoyi/system/controller/AiCharacterMemoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ruoyi-vibtempt/src/main/java/com/ruoyi/system/controller/AiChatAnalyticsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ruoyi-vibetempt/src/main/java/com/ruoyi/system/controller/AiChatAnalyticsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ruoyi-vibtempt/src/main/java/com/ruoyi/system/controller/AiChatSessionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ruoyi-vibetempt/src/main/java/com/ruoyi/system/controller/AiChatSessionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ruoyi-vibtempt/src/main/java/com/ruoyi/system/controller/AiConversationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ruoyi-vibetempt/src/main/java/com/ruoyi/system/controller/AiConversationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ruoyi-vibtempt/src/main/java/com/ruoyi/system/controller/AiMessageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ruoyi-vibetempt/src/main/java/com/ruoyi/system/controller/AiMessageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ruoyi-vibtempt/src/main/java/com/ruoyi/system/controller/AiUserCharacterRelationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ruoyi-vibetempt/src/main/java/com/ruoyi/system/controller/AiUserCharacterRelationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ruoyi-vibtempt/src/main/java/com/ruoyi/system/domain/AiCharacter.java" beforeDir="false" afterPath="$PROJECT_DIR$/ruoyi-vibetempt/src/main/java/com/ruoyi/system/domain/AiCharacter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ruoyi-vibtempt/src/main/java/com/ruoyi/system/domain/AiCharacterMemory.java" beforeDir="false" afterPath="$PROJECT_DIR$/ruoyi-vibetempt/src/main/java/com/ruoyi/system/domain/AiCharacterMemory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ruoyi-vibtempt/src/main/java/com/ruoyi/system/domain/AiChatAnalytics.java" beforeDir="false" afterPath="$PROJECT_DIR$/ruoyi-vibetempt/src/main/java/com/ruoyi/system/domain/AiChatAnalytics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ruoyi-vibtempt/src/main/java/com/ruoyi/system/domain/AiChatSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/ruoyi-vibetempt/src/main/java/com/ruoyi/system/domain/AiChatSession.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ruoyi-vibtempt/src/main/java/com/ruoyi/system/domain/AiConversation.java" beforeDir="false" afterPath="$PROJECT_DIR$/ruoyi-vibetempt/src/main/java/com/ruoyi/system/domain/AiConversation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ruoyi-vibtempt/src/main/java/com/ruoyi/system/domain/AiMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/ruoyi-vibetempt/src/main/java/com/ruoyi/system/domain/AiMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ruoyi-vibtempt/src/main/java/com/ruoyi/system/domain/AiUserCharacterRelation.java" beforeDir="false" afterPath="$PROJECT_DIR$/ruoyi-vibetempt/src/main/java/com/ruoyi/system/domain/AiUserCharacterRelation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ruoyi-vibtempt/src/main/java/com/ruoyi/system/mapper/AiCharacterMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ruoyi-vibetempt/src/main/java/com/ruoyi/system/mapper/AiCharacterMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ruoyi-vibtempt/src/main/java/com/ruoyi/system/mapper/AiCharacterMemoryMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ruoyi-vibetempt/src/main/java/com/ruoyi/system/mapper/AiCharacterMemoryMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ruoyi-vibtempt/src/main/java/com/ruoyi/system/mapper/AiChatAnalyticsMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ruoyi-vibetempt/src/main/java/com/ruoyi/system/mapper/AiChatAnalyticsMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ruoyi-vibtempt/src/main/java/com/ruoyi/system/mapper/AiChatSessionMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ruoyi-vibetempt/src/main/java/com/ruoyi/system/mapper/AiChatSessionMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ruoyi-vibtempt/src/main/java/com/ruoyi/system/mapper/AiConversationMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ruoyi-vibetempt/src/main/java/com/ruoyi/system/mapper/AiConversationMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ruoyi-vibtempt/src/main/java/com/ruoyi/system/mapper/AiMessageMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ruoyi-vibetempt/src/main/java/com/ruoyi/system/mapper/AiMessageMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ruoyi-vibtempt/src/main/java/com/ruoyi/system/mapper/AiUserCharacterRelationMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ruoyi-vibetempt/src/main/java/com/ruoyi/system/mapper/AiUserCharacterRelationMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ruoyi-vibtempt/src/main/java/com/ruoyi/system/service/IAiCharacterMemoryService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ruoyi-vibtempt/src/main/java/com/ruoyi/system/service/IAiCharacterService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ruoyi-vibtempt/src/main/java/com/ruoyi/system/service/IAiChatAnalyticsService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ruoyi-vibtempt/src/main/java/com/ruoyi/system/service/IAiChatSessionService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ruoyi-vibtempt/src/main/java/com/ruoyi/system/service/IAiConversationService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ruoyi-vibtempt/src/main/java/com/ruoyi/system/service/IAiMessageService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ruoyi-vibtempt/src/main/java/com/ruoyi/system/service/IAiUserCharacterRelationService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ruoyi-vibtempt/src/main/java/com/ruoyi/system/service/impl/AiCharacterMemoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ruoyi-vibetempt/src/main/java/com/ruoyi/system/service/impl/AiCharacterMemoryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ruoyi-vibtempt/src/main/java/com/ruoyi/system/service/impl/AiCharacterServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ruoyi-vibetempt/src/main/java/com/ruoyi/system/service/impl/AiCharacterServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ruoyi-vibtempt/src/main/java/com/ruoyi/system/service/impl/AiChatAnalyticsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ruoyi-vibetempt/src/main/java/com/ruoyi/system/service/impl/AiChatAnalyticsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ruoyi-vibtempt/src/main/java/com/ruoyi/system/service/impl/AiChatSessionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ruoyi-vibetempt/src/main/java/com/ruoyi/system/service/impl/AiChatSessionServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ruoyi-vibtempt/src/main/java/com/ruoyi/system/service/impl/AiConversationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ruoyi-vibetempt/src/main/java/com/ruoyi/system/service/impl/AiConversationServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ruoyi-vibtempt/src/main/java/com/ruoyi/system/service/impl/AiMessageServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ruoyi-vibetempt/src/main/java/com/ruoyi/system/service/impl/AiMessageServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ruoyi-vibtempt/src/main/java/com/ruoyi/system/service/impl/AiUserCharacterRelationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ruoyi-vibetempt/src/main/java/com/ruoyi/system/service/impl/AiUserCharacterRelationServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ruoyi-vibtempt/src/main/resources/mapper/system/AiCharacterMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ruoyi-vibetempt/src/main/resources/mapper/system/AiCharacterMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ruoyi-vibtempt/src/main/resources/mapper/system/AiCharacterMemoryMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ruoyi-vibetempt/src/main/resources/mapper/system/AiCharacterMemoryMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ruoyi-vibtempt/src/main/resources/mapper/system/AiChatAnalyticsMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ruoyi-vibetempt/src/main/resources/mapper/system/AiChatAnalyticsMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ruoyi-vibtempt/src/main/resources/mapper/system/AiChatSessionMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ruoyi-vibetempt/src/main/resources/mapper/system/AiChatSessionMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ruoyi-vibtempt/src/main/resources/mapper/system/AiConversationMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ruoyi-vibetempt/src/main/resources/mapper/system/AiConversationMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ruoyi-vibtempt/src/main/resources/mapper/system/AiMessageMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ruoyi-vibetempt/src/main/resources/mapper/system/AiMessageMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ruoyi-vibtempt/src/main/resources/mapper/system/AiUserCharacterRelationMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ruoyi-vibetempt/src/main/resources/mapper/system/AiUserCharacterRelationMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="30kpS8lTqvALufpKds0PB1T52G2" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
@@ -43,14 +77,19 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.AiCharacterServiceTest.testSelectAiCharacterById.executor": "Run",
     "Maven.vibetempt-server [clean].executor": "Run",
     "Maven.vibetempt-server [install].executor": "Run",
+    "Maven.vibetempt-server [validate].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Notification.DisplayName-DoNotAsk-DatabaseConfigFileWatcher.found": "Database connection parameters found",
+    "Notification.DoNotAsk-DatabaseConfigFileWatcher.found": "true",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "Spring Boot.RuoYiApplication.executor": "Run",
     "git-widget-placeholder": "main",
     "last_opened_file_path": "/Users/eric.liang/CursorProjects/vibetempt-server",
@@ -66,10 +105,28 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ruoyi-vibetempt" />
+      <recent name="$PROJECT_DIR$/ruoyi-vibetempt/src" />
       <recent name="$PROJECT_DIR$/ruoyi-vibtempt/src/main/java" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.RuoYiApplication">
+    <configuration name="AiCharacterServiceTest.testSelectAiCharacterById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ruoyi-vibetempt" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ruoyi.system.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ruoyi.system.service" />
+      <option name="MAIN_CLASS_NAME" value="com.ruoyi.system.service.AiCharacterServiceTest" />
+      <option name="METHOD_NAME" value="testSelectAiCharacterById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RuoYiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="ruoyi-admin" />
@@ -78,6 +135,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.AiCharacterServiceTest.testSelectAiCharacterById" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -94,7 +156,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1754181421607</updated>
-      <workItem from="1754181422694" duration="6947000" />
+      <workItem from="1754181422694" duration="8106000" />
+      <workItem from="1754195216498" duration="10711000" />
+      <workItem from="1754284071517" duration="1473000" />
     </task>
     <servers />
   </component>
@@ -105,7 +169,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/ruoyi-vibtempt/src/main/java/com/vibetempt/Main.java</url>
+          <url>file://$PROJECT_DIR$/ruoyi-vibetempt/src/main/java/com/vibetempt/Main.java</url>
           <line>13</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>

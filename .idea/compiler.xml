@@ -2,19 +2,23 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="ruoyi-framework" />
         <module name="ruoyi-system" />
-        <module name="ruoyi-vibtempt" />
         <module name="ruoyi-common" />
         <module name="ruoyi-generator" />
         <module name="ruoyi-quartz" />
+        <module name="ruoyi-vibetempt" />
         <module name="ruoyi-admin" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ruoyi-vibtempt" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
@@ -24,6 +28,7 @@
       <module name="ruoyi-generator" options="-parameters" />
       <module name="ruoyi-quartz" options="-parameters" />
       <module name="ruoyi-system" options="-parameters" />
+      <module name="ruoyi-vibetempt" options="-parameters" />
       <module name="ruoyi-vibtempt" options="-parameters" />
       <module name="vibetempt-server" options="-parameters" />
     </option>
