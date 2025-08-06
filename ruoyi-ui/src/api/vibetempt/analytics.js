@@ -1,44 +1,44 @@
 import request from '@/utils/request'
 
-// 查询AI分析列表
+// 查询聊天统计列表
 export function listAnalytics(query) {
   return request({
-    url: '/system/analytics/list',
+    url: '/vibetempt/analytics/list',
     method: 'get',
     params: query
   })
 }
 
-// 查询AI分析详细
+// 查询聊天统计详细
 export function getAnalytics(id) {
   return request({
-    url: '/system/analytics/' + id,
+    url: '/vibetempt/analytics/' + id,
     method: 'get'
   })
 }
 
-// 新增AI分析
+// 新增聊天统计
 export function addAnalytics(data) {
   return request({
-    url: '/system/analytics',
+    url: '/vibetempt/analytics',
     method: 'post',
     data: data
   })
 }
 
-// 修改AI分析
+// 修改聊天统计
 export function updateAnalytics(data) {
   return request({
-    url: '/system/analytics',
+    url: '/vibetempt/analytics',
     method: 'put',
     data: data
   })
 }
 
-// 删除AI分析
+// 删除聊天统计
 export function delAnalytics(id) {
   return request({
-    url: '/system/analytics/' + id,
+    url: '/vibetempt/analytics/' + id,
     method: 'delete'
   })
-} 
+}
